@@ -5,7 +5,7 @@ const productsController = require('../Controllers/productsController');
 // Route for fetching all products
 router.get('/Homepage', productsController.getAllProducts,);
 router.post('/CreateProduct', productsController.createProduct);
-router.put('/Update Product', productsController.updateProduct);
+router.put('/UpdateProduct', productsController.updateProduct);
 router.get('/ProductDetails/:productID', productsController.getProductById);
 
 
