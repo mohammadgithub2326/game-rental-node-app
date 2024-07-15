@@ -4,7 +4,7 @@ const Product = require('../Models/Product');
 // Function to add or remove product from cart
 exports.updateCart = async (req, res) => {
   const { userID, productID, count, bookingStartDate, bookingEndDate } = req.body;
-
+console.log(req.body.userID)
   try {
     // Find user by userID
     let user = await User.findOne({ _id: userID });
